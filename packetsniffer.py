@@ -23,7 +23,7 @@ infinite=1
 def timenow():
 	currenttime=time.strftime("%m%d%y-%H%M%S")
 	return currenttime
-
+	
 def export():
 	p = sniff(iface='eth0',timeout=sniffingtime,count=0)
 	wrpcap('/home/debian/Desktop/pcaps/' + timenow() + '.pcap',p);
